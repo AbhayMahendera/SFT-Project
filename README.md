@@ -52,4 +52,4 @@ To automate testing, copy the script into the `.git/hooks` directory in your rep
 
 
 
-## **Refer to** [Project Instructions.pdf](https://github.com/AbhayMahendera/SFT-Project/blob/main/Project%20Instructions.pdf)
+ **Refer to** [Project Instructions.pdf](https://github.com/AbhayMahendera/SFT-Project/blob/main/Project%20Instructions.pdf)
