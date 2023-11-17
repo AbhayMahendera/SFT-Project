@@ -1,102 +1,55 @@
-<a name="br1"></a> 
+# Seneca Deliveries Project
 
-ABHAY MAHENDERA
+## Learning Outcomes
+- Design and build a solution to a small problem.
+- Design testing for the problem.
 
-abhaymahendera0@gmail.com
+## Project Description
 
-+1 4379849009
+You have been hired by a local delivery company that operates three different trucks on three distinct routes in your part of the city. The city map is represented as a 25 by 25 square grid. The delivery company has offices at square 1A, and three trucks initially follow a common path (blue) before branching out into different routes (yellow and green). The goal is to optimize package delivery by considering truck capacity, distance to destination, and available space.
 
-[linkedin.com/in/abhay-mahendera-56aa71164](https://www.linkedin.com/in/abhay-mahendera-56aa71164)
+### Shipment Details
+When a customer comes in with a shipment, they provide:
+- Weight of the shipment in kilograms.
+- Size of the box required in cubic meters.
+- Destination of the box specified by a row number and column letter within the black rectangles (buildings).
 
-**Summary**
+### Truck Specifications
+- All trucks can hold up to 1500 kilograms of cargo.
+- Trucks can carry 48 cubic meters of boxes in 1/2, 1, and 2 cubic meter sizes.
+- Boxes are square, with the same dimensions on all sides.
 
-7 months of experience as a web manager and coordinator ; helped staff and management at an educational
+### Delivery Process
+1. Find a truck that can hold the shipment and is close to the destination.
+2. Consider the distance a truck must divert from its route to deliver the package.
+3. Trucks cannot drive through black buildings on the map.
+4. If two trucks are equidistant, choose the one with more available space (consider weight and volume).
 
-institute in all kinds of official works.
+### Measuring Distance
+- Euclidean distance is used to determine the closest truck to the destination.
+- A* algorithm is employed to find the shortest path between two points, considering buildings.
 
-1 year and continuing experience in food and hospitality industry that includes guest service and customer
+## Shortest Path Algorithm
+- A* algorithm uses Euclidean distance as a heuristic to determine the best route.
+- The algorithm can get stuck at the edge of the map or in a corner of a building.
 
-retention alongwith team management.
+## Overall Algorithm
+1. Follow the route for each truck.
+2. Calculate the Euclidean distance to the destination for each truck.
+3. Select the minimum Euclidean distance for each truck.
+4. Calculate the shortest path from each truck's position to the destination.
+5. If a truck cannot find a path to the destination, choose another available truck.
+6. Select the truck with the shortest path from its route to the destination.
+7. Attempt to add the package to the selected truck.
+8. If the truck cannot hold the package, try the next closest truck.
+9. If no truck can take the package, store it at the depot until the next day.
 
-Currently studying computer programming.
 
-**Experience**
+## Test Automation
+To automate testing, copy the script into the `.git/hooks` directory in your repository. Ensure the script is named `pre-push` in the hooks directory.
 
-**Team Member**
-
-Tim Hortons
-
-Oct 2022 - Present (1 year)
-
-\- Customer Service
-
-\- Guest Retention
-
-\- Serve guests.
-
-\- Prepare food and beverages.
-
-\- Manage all other tasks in the restraunt during the shift in absence of other staff.
-
-**Web Content Manager cum Coordinator**
-
-DEEPTI CLASSES PVT LTD
-
-Nov 2021 - May 2022 (7 months)
-
-\- Managed what and when the content is to published on social media handles and website of the
-
-company.
-
-\- Managed technical aspects of the company.
-
-\- Assisted management and staff of the company in their official and unofficial works.
-
-**Education**
-
-**Seneca Polytechnic**
-
-Diploma, Computer Programming
-
-2022 - 2024
-
-**Central Board of Secondary Education**
-
-Senior Secondary Education, Non-Medical Science
-
-2020 - 2021
-
-Completed senior secondary education from Guru Nanak Khalsa School , Chandigarh in non-medical
-
-stream.
-
-**Licenses & Certifications**
-
-ABHAY MAHENDERA - page 1
+**Note**: Follow the agile development process, update code documentation, and use Jira for issue tracking. Meet regularly to discuss project progress.
 
 
 
-<a name="br2"></a> 
-
-**C programming** - GUVI Geek Networks, IITM Research Park
-
-636K4T26155tIj84J8
-
-**Python** - GUVI Geek Networks, IITM Research Park
-
-7ED641u7imT05GY401
-
-**Cyber Security and Ethical Hacking for Begginers** - GUVI Geek Networks, IITM
-
-Research Park
-
-35946O811I48co04i1
-
-**Skills**
-
-C • C++ • JavaScript • Adobe Illustrator • Languages : English , Hindi , Punjabi , Haryanvi •
-
-Communication • Time Management • Customer Service • Customer Retention • Team Management
-
-ABHAY MAHENDERA - page 2
-
+ **Refer to** [Project Instructions.pdf](https://github.com/AbhayMahendera/SFT-Project/blob/main/Project%20Instructions.pdf) for instructions and more details about the project.
